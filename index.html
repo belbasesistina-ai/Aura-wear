@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AuraWear | Modern Women's Fashion</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#faf7f8;
+color:#333;
+}
+
+header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 10%;
+background:white;
+box-shadow:0 5px 20px rgba(0,0,0,.08);
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+.logo{
+font-size:30px;
+font-weight:700;
+color:#ff4d8d;
+}
+
+nav a{
+text-decoration:none;
+color:#444;
+margin:0 15px;
+font-weight:500;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ff4d8d;
+}
+
+.cart{
+background:#ff4d8d;
+padding:10px 18px;
+border-radius:25px;
+color:white;
+font-weight:600;
+}
+
+.hero{
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:70px 10%;
+background:linear-gradient(135deg,#ffe4ee,#fff);
+flex-wrap:wrap;
+}
+
+.hero-text{
+max-width:500px;
+}
+
+.hero-text h1{
+font-size:60px;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-text span{
+color:#ff4d8d;
+}
+
+.hero-text p{
+font-size:18px;
+margin-bottom:30px;
+color:#555;
+}
+
+.btn{
+background:#ff4d8d;
+padding:15px 35px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+font-weight:600;
+transition:.3s;
+}
+
+.btn:hover{
+background:#e03173;
+}
+
+.hero img{
+width:420px;
+border-radius:20px;
+box-shadow:0 20px 40px rgba(0,0,0,.15);
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+margin:60px 0 10px;
+}
+
+.section-sub{
+text-align:center;
+color:#777;
+margin-bottom:40px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:30px;
+padding:0 10% 70px;
+}
+
+.card{
+background:white;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:340px;
+object-fit:cover;
+}
+
+.info{
+padding:20px;
+}
+
+.info h3{
+margin-bottom:10px;
+}
+
+.price{
+font-size:22px;
+font-weight:bold;
+color:#ff4d8d;
+margin:15px 0;
+}
+
+button{
+width:100%;
+padding:14px;
+border:none;
+background:#ff4d8d;
+color:white;
+border-radius:10px;
+cursor:pointer;
+font-size:16px;
+transition:.3s;
+}
+
+button:hover{
+background:#e03173;
+}
+
+.about{
+padding:80px 10%;
+background:white;
+text-align:center;
+}
+
+.about h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about p{
+max-width:900px;
+margin:auto;
+line-height:1.8;
+color:#666;
+}
+
+.contact{
+padding:80px 10%;
+background:#fff4f8;
+text-align:center;
+}
+
+.contact h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.contact p{
+margin:10px;
+color:#666;
+}
+
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:25px;
+}
+
+@media(max-width:900px){
+
+.hero{
+flex-direction:column;
+text-align:center;
+}
+
+.hero img{
+margin-top:40px;
+width:100%;
+max-width:400px;
+}
+
+.hero-text h1{
+font-size:42px;
+}
+
+header{
+flex-direction:column;
+gap:15px;
+}
+
+}
+
+</style>
+
+</head>
+<body>
+
+<header>
+
+<div class="logo">AuraWear</div>
+
+<nav>
+
+<a href="#">Home</a>
+<a href="#shop">Shop</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+
+</nav>
+
+<div class="cart">
+🛒 Cart :
+<span id="count">0</span>
+</div>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-text">
+
+<h1>Elevate Your <span>Fashion</span> Style</h1>
+
+<p>
+Discover trendy women's clothing with premium quality,
+modern designs, and timeless elegance. Dress beautifully
+with AuraWear.
+</p>
+
+<a href="#shop" class="btn">Shop Now</a>
+
+</div>
+
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?w=800" alt="Fashion">
+
+</section>
+
+<h2 class="section-title" id="shop">Trending Collection</h2>
+
+<p class="section-sub">
+Modern fashion for every confident woman.
+</p>
+
+<section class="products">
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?w=800">
+
+<div class="info">
+
+<h3>Elegant Pink Dress</h3>
+
+<p>Perfect for parties and casual outings.</p>
+
+<div class="price">$59</div>
+
+<button onclick="addCart()">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800">
+
+<div class="info">
+
+<h3>Luxury Winter Coat</h3>
+
+<p>Stylish and comfortable premium fabric.</p>
+
+<div class="price">$89</div>
+
+<button onclick="addCart()">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=800">
+
+<div class="info">
+
+<h3>Classic Casual Outfit</h3>
+
+<p>Minimal modern everyday look.</p>
+
+<div class="price">$49</div>
+
+<button onclick="addCart()">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+<div class="card">
+
+<img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=800">
+
+<div class="info">
+
+<h3>Premium Summer Wear</h3>
+
+<p>Lightweight fashion collection.</p>
+
+<div class="price">$65</div>
+
+<button onclick="addCart()">
+Add to Cart
+</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2>About AuraWear</h2>
+
+<p>
+
+AuraWear is a modern women's fashion brand dedicated to
+bringing elegance, confidence, and contemporary style into
+every wardrobe. Our collections combine premium fabrics,
+minimalist aesthetics, and trendy designs to help women
+express their unique personality with confidence.
+
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2>Contact Us</h2>
+
+<p>📧 support@aurawear.com</p>
+
+<p>📞 +977 9800000000</p>
+
+<p>📍 Butwal, Nepal</p>
+
+</section>
+
+<footer>
+
+© 2026 AuraWear. All Rights Reserved.
+
+</footer>
+
+<script>
+
+let cart=0;
+
+function addCart(){
+
+cart++;
+
+document.getElementById("count").innerHTML=cart;
+
+alert("Item added to cart!");
+
+}
+
+</script>
+
+</body>
+</html>
